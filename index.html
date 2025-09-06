@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Lorry Driver Details</title>
+</head>
+<body>
+    <h1>Lorry Driver Details</h1>
+    <ul>
+    {% for lorry_number, driver_details in lorry_drivers.items() %}
+        <li>
+            Lorry Number: {{ lorry_number }}<br>
+            Driver Name: {{ driver_details['driver_name'] }}<br>
+            Driver Phone: {{ driver_details['driver_phone'] }}
+        </li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
